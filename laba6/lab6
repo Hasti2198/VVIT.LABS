@@ -1,5 +1,5 @@
 class UserAccount:
-    def init(self, username, email, password):
+    def __init__(self, username, email, password):
         self.username = username
         self.email = email
         self.__password = password  # Приватный атрибут
@@ -57,7 +57,7 @@ class Vehicle:
 
 
 class Car(Vehicle):
-    def init(self, make, model, fuel_type):
+    def __init__(self, make, model, fuel_type):
         super().init(make, model)
         self.fuel_type = fuel_type
 
