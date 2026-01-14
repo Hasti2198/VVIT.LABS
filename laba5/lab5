@@ -1,6 +1,6 @@
 #1
 class book:
-    def init(self,title,author,year):
+    def __init__(self,title,author,year):
         self.title = title
         self.author = author
         self.year = year
@@ -10,7 +10,7 @@ book.info = book('Преступление и наказание','Федор Д
 print(book.info.get_info())
 #2
 class Circle:
-    def init(self,radius):
+    def __init__(self,radius):
         self.radius = radius
     def get_radius(self):
         return self.radius
